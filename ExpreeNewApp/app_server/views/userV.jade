@@ -1,0 +1,26 @@
+extends layout 
+block content
+    h3 
+        |User Panel
+    nav 
+        ul
+            li
+                a(href='/users/addUser')
+                    | Add User 
+            li
+                a(href='/users/viewUser')
+                    | View User 
+            li 
+                a(href='/users/updateUser')
+                    | Update User
+            li 
+                a(href='/users/deteleUser')
+                    | Delete User
+    //- div
+    //-     p 
+    //-         |This is the user view
+    //-         span=msg 
+    block addUser
+    block viewUser 
+    block updateUser 
+    block deleteUser

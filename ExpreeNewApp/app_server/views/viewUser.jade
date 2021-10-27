@@ -1,0 +1,10 @@
+extends userV
+block viewUser 
+    each usr, i in userList
+        div.row
+            div.col-lg-4 
+                |User Name: 
+            div.col-lg-4
+                |#{usr.userName}
+            div.col-lg-4
+

@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
+  body
+    div.container-fluid
+      div.row
+        div.col-lg-3
+          |left navigation 
+          ul 
+            li 
+              a(href='/users')
+                |Users
+            li  
+              a(href='/pd')
+                |Products
+        div.col-lg-6
+          block content
+        div.col-lg-3
+          |right section
+    

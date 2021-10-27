@@ -1,0 +1,7 @@
+extends userV 
+block addUser 
+    form(action='/users/addData', method='post')
+        input(type='text', placeholder='Enter Your Name', name='Uname')
+        input(type='submit')
+    block message 
+        span=msg
